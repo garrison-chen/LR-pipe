@@ -1,0 +1,9 @@
+path:
+    data: "data/test/"
+    
+params:
+    sequence_identity: 0.8
+    threads: 4
+
+threshold:
+    select_threshold: 0

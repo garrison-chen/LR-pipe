@@ -1,0 +1,9 @@
+Building DAG of jobs...
+IncompleteFilesException:
+The files below seem to be incomplete. If you are sure that certain files are not incomplete, mark them as complete with
+
+    snakemake --cleanup-metadata <filenames>
+
+To re-generate the files rerun your command with the --rerun-incomplete flag.
+Incomplete files:
+/Users/gch21/Desktop/ONT-pipe/test_data/20230316_1657_MN27902_FAO64683_3af5b031/Results/results_chopper

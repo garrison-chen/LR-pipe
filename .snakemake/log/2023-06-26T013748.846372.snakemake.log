@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+qc_reporting_minion        1              1              1
+total                      1              1              1
+
+Select jobs to execute...
+
+[Mon Jun 26 01:37:48 2023]
+rule qc_reporting_minion:
+    input: /Users/gch21/Desktop/ONT-data
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/var/folders/ft/n26zr5t90g75tssl4npdvnlr0000gp/T
+
+Activating conda environment: fastqc
+Terminating processes on user request, this might take some time.
+[Mon Jun 26 01:37:57 2023]
+Error in rule qc_reporting_minion:
+    jobid: 0
+    input: /Users/gch21/Desktop/ONT-data
+    conda-env: fastqc
+    shell:
+        Rscript packages/MinIONQC.R -i /Users/gch21/Desktop/ONT-data/sequencing_summary*.txt -o /Users/gch21/Desktop/ONT-data/Results/minion_qc_results
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-06-26T013748.846372.snakemake.log

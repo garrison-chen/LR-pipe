@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+qc_reporting_fastqc        1              1              1
+qc_reporting_minion        1              1              1
+total                      2              1              1
+
+Select jobs to execute...
+
+[Mon Jun 26 01:52:19 2023]
+rule qc_reporting_minion:
+    input: /Users/gch21/Desktop/ONT-data
+    output: /Users/gch21/Desktop/ONT-data/Results/minion_qc_results
+    jobid: 1
+    reason: Missing output files: /Users/gch21/Desktop/ONT-data/Results/minion_qc_results
+    wildcards: input=/Users/gch21/Desktop/ONT-data
+    resources: tmpdir=/var/folders/ft/n26zr5t90g75tssl4npdvnlr0000gp/T
+
+ImproperOutputException in rule qc_reporting_minion in file /Users/gch21/Desktop/ONT-pipe/Snakefile, line 7:
+Outputs of incorrect type (directories when expecting files or vice versa). Output directories must be flagged with directory(). for rule qc_reporting_minion:
+    output: /Users/gch21/Desktop/ONT-data/Results/minion_qc_results
+    wildcards: input=/Users/gch21/Desktop/ONT-data
+    affected files:
+        /Users/gch21/Desktop/ONT-data/Results/minion_qc_results
+Removing output files of failed job qc_reporting_minion since they might be corrupted:
+/Users/gch21/Desktop/ONT-data/Results/minion_qc_results
+[Errno 66] Directory not empty: '/Users/gch21/Desktop/ONT-data/Results/minion_qc_results'
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-06-26T015219.683010.snakemake.log

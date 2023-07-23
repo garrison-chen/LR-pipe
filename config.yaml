@@ -1,5 +1,6 @@
 path:
-    data: "data/test/"
+    data: "/Users/gch21/ONT-pipe/test_data/20230316_1657_MN27902_FAO64683_3af5b031"
+    results: "/Users/gch21/ONT-pipe/test_results"
     
 params:
     sequence_identity: 0.8

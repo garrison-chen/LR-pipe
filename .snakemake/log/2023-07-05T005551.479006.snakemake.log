@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+qc_reporting_fastqc        1              1              1
+total                      1              1              1
+
+Select jobs to execute...
+
+[Wed Jul  5 00:55:51 2023]
+rule qc_reporting_fastqc:
+    input: /Users/gch21/Desktop/ONT-data
+    output: /Users/gch21/Desktop/ONT-data/Results/fastqc_results
+    jobid: 0
+    reason: Missing output files: /Users/gch21/Desktop/ONT-data/Results/fastqc_results
+    wildcards: input=/Users/gch21/Desktop/ONT-data
+    resources: tmpdir=/var/folders/ft/n26zr5t90g75tssl4npdvnlr0000gp/T
+
+Activating conda environment: fastqc
+[Wed Jul  5 00:55:52 2023]
+Error in rule qc_reporting_fastqc:
+    jobid: 0
+    input: /Users/gch21/Desktop/ONT-data
+    output: /Users/gch21/Desktop/ONT-data/Results/fastqc_results
+    conda-env: fastqc
+    shell:
+        mkdir /Users/gch21/Desktop/ONT-data/Results/fastqc_results && fastqc -t 8 -o /Users/gch21/Desktop/ONT-data/Results/fastqc_results /Users/gch21/Desktop/ONT-data/Results/fastqc_results
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job qc_reporting_fastqc since they might be corrupted:
+/Users/gch21/Desktop/ONT-data/Results/fastqc_results
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-07-05T005551.479006.snakemake.log

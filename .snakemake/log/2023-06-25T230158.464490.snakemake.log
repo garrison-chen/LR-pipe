@@ -1,0 +1,3 @@
+Building DAG of jobs...
+MissingRuleException:
+No rule to produce /Users/gch21/Desktop/ONT-pipe_resultsm/inion_qc_results (if you use input functions make sure that they don't raise unexpected exceptions).

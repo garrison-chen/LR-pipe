@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule qc_reporting in file /Users/gch21/Desktop/ONT-pipe/Snakefile, line 7:
+Missing input files(Using '~' in your paths is not allowed as such platform specific syntax is not resolved by Snakemake. In general, try sticking to relative paths for everything inside the working directory.) for rule qc_reporting:
+    output: ~/Desktop/ONT-pipe_results, minion_qc_results
+    affected files:
+        ~/Desktop/ONT-data

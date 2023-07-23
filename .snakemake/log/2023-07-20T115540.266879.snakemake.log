@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                      count    min threads    max threads
+---------------------  -------  -------------  -------------
+qc_reporting_minionqc        1              1              1
+total                        1              1              1
+
+Select jobs to execute...
+
+[Thu Jul 20 11:55:40 2023]
+rule qc_reporting_minionqc:
+    input: /Users/gch21/Desktop/ONT-pipe/test_data/20230316_1657_MN27902_FAO64683_3af5b031
+    output: /Users/gch21/Desktop/ONT-pipe/test_results/Results/minion_qc_results
+    jobid: 0
+    reason: Missing output files: /Users/gch21/Desktop/ONT-pipe/test_results/Results/minion_qc_results
+    wildcards: input=/Users/gch21/Desktop/ONT-pipe/test_results
+    resources: tmpdir=/var/folders/ft/n26zr5t90g75tssl4npdvnlr0000gp/T
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule qc_reporting_minionqc in file /Users/gch21/Desktop/ONT-pipe/Snakefile, line 7:
+Job 0 completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/Users/gch21/Desktop/ONT-pipe/test_results/Results/minion_qc_results
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-07-20T115540.266879.snakemake.log

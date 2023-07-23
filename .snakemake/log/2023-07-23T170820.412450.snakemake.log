@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule chopper in file /Users/gch21/ONT-pipe/Snakefile, line 39:
+Missing input files for rule chopper:
+    output: /Users/gch21/Desktop/ONT-pipe/test_data/20230316_1657_MN27902_FAO64683_3af5b031/Results/results_chopper
+    wildcards: input=/Users/gch21/Desktop/ONT-pipe/test_data/20230316_1657_MN27902_FAO64683_3af5b031
+    affected files:
+        /Users/gch21/Desktop/ONT-pipe/test_data/20230316_1657_MN27902_FAO64683_3af5b031

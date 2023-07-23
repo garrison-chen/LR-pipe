@@ -1,0 +1,3 @@
+NameError in file /Users/gch21/Desktop/ONT-pipe/Snakefile, line 12:
+name 'fastqc' is not defined
+  File "/Users/gch21/Desktop/ONT-pipe/Snakefile", line 12, in <module>
